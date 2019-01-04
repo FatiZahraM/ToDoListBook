@@ -1,0 +1,30 @@
+{% extends 'master.html' %}
+
+{% block content %}
+
+ <body>
+
+    <div class="container">
+
+        <h2>Add Awesome Book</h2>
+
+            <form class="site-form" action="/update/{{books.id}}" >
+
+                 <label class="form-group">Title</label>
+                 <input class="form-control" type="text" name="title" value="{{books.title}}" placeholder="books.title"><br>
+
+                 <label class="form-group">Price</label>
+                 <input class="form-control" type="text" name="price" value="{{books.price}}" placeholder="books.price"><br>
+
+                 <label class="form-group">Author</label>
+                 <input class="form-control" type="text" name="author" value="{{books.author}}" placeholder="books.author"><br>
+
+                <input class="btn btn success" type="submit" value="Update">
+
+            </form>
+
+    </div>
+ </body>
+
+
+{% endblock %}
